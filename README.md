@@ -6,6 +6,7 @@ This script is intended to allow you to query your backlog of missing episodes w
  - requests module
  - json module
  - urlparse module 
+ - PyYAML module
  
 ## Usage
 
