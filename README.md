@@ -13,7 +13,7 @@ This script is intended to allow you to query your backlog of missing episodes w
  1. Download to desired location
  2. make executable 
   `# chmod a+x sonarr_backfiller.py`
- 3. Put your Edit yaml file to suit your needs
+ 3. Edit yaml file to match your Sonarr server
  4. Execute Script
  
  You can create a cron task to execute this, however don't select too many at once. I will be adding additional checks and a check of the current queue status at a later date. 
