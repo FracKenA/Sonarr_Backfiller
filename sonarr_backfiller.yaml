@@ -1,0 +1,8 @@
+logging_level: "DEBUG"
+logging_file_name: "sonarr_backfiller"
+sonarr:
+  sort_direction: "desc"
+  number_of_results: 30
+  api_key: "SONARR_API_KEY"
+  address: "http://sonarr_address:port" 
+  queue_minimum: 50
