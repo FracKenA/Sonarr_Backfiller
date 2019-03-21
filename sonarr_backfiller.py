@@ -124,8 +124,8 @@ def main():
     requests_log.propagate = True
 
     queue_length = get_queue()
-    if queue_length < settings_import["sonarr"]["queue_minimum"]:
-        logging.info("Queue length is %s adding an additional %s items",
+    if queue_length <= settings_import["sonarr"]["queue_minimum"]:
+        logging.info("Queue length is %s, adding an additional %s items",
                      queue_length,
                      settings_import["sonarr"]["number_of_results"]
                      )
@@ -133,7 +133,7 @@ def main():
         episode_list.update({"EpisodeIds": get_wanted()})
         queue_search(episode_list)
     else:
-        logging.info("Queue length is %s which exceeds limit os %s to add additional items",
+        logging.info("Queue length is %s, which exceeds limit of %s to add additional items",
                      queue_length,
                      settings_import["sonarr"]["number_of_results"]
                      )
